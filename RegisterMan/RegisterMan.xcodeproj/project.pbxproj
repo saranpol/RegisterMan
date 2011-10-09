@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* RegisterManAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* RegisterManAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* RegisterManViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* RegisterManViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* RegisterManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* RegisterManViewController.m */; };
+		4341F06F141021B2005D24DD /* icon-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4341F06A141021B2005D24DD /* icon-ipad.png */; };
+		437A055F14140775004B59E0 /* ViewHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 437A055D14140775004B59E0 /* ViewHome.m */; };
+		437A056014140775004B59E0 /* ViewHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437A055E14140775004B59E0 /* ViewHome.xib */; };
+		437A0563141407EB004B59E0 /* home-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 437A0562141407EB004B59E0 /* home-iPad.png */; };
+		437A05AD1414120E004B59E0 /* bg_layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 437A05AB1414120E004B59E0 /* bg_layer.png */; };
+		437A05AE1414120E004B59E0 /* input_layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 437A05AC1414120E004B59E0 /* input_layer.png */; };
+		439352CD14141A6700932EE1 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 439352CC14141A6700932EE1 /* title.png */; };
+		439352E114141E9000932EE1 /* ViewSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 439352DF14141E9000932EE1 /* ViewSetting.m */; };
+		439352E214141E9000932EE1 /* ViewSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439352E014141E9000932EE1 /* ViewSetting.xib */; };
+		43CE8CC2141027820052F77E /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43CE8CC1141027820052F77E /* MainWindow-iPad.xib */; };
+		43CE8D45141034890052F77E /* button_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CE8D43141034890052F77E /* button_press.png */; };
+		43CE8D46141034890052F77E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CE8D44141034890052F77E /* button.png */; };
+		43CE8D8A141042DD0052F77E /* RegisterManViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43CE8D89141042DD0052F77E /* RegisterManViewController-iPad.xib */; };
+		43E97D1A1401A3030077208E /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E97D191401A3030077208E /* HttpRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* RegisterManAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterManAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* RegisterManAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterManAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* RegisterMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* RegisterManViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterManViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* RegisterManViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterManViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* RegisterManViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterManViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* RegisterMan_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMan_Prefix.pch; sourceTree = "<group>"; };
+		4341F06A141021B2005D24DD /* icon-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ipad.png"; sourceTree = "<group>"; };
+		437A055C14140775004B59E0 /* ViewHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHome.h; sourceTree = "<group>"; };
+		437A055D14140775004B59E0 /* ViewHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHome.m; sourceTree = "<group>"; };
+		437A055E14140775004B59E0 /* ViewHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewHome.xib; sourceTree = "<group>"; };
+		437A0562141407EB004B59E0 /* home-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-iPad.png"; sourceTree = "<group>"; };
+		437A05AB1414120E004B59E0 /* bg_layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_layer.png; sourceTree = "<group>"; };
+		437A05AC1414120E004B59E0 /* input_layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = input_layer.png; sourceTree = "<group>"; };
+		439352CC14141A6700932EE1 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		439352DE14141E9000932EE1 /* ViewSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSetting.h; sourceTree = "<group>"; };
+		439352DF14141E9000932EE1 /* ViewSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSetting.m; sourceTree = "<group>"; };
+		439352E014141E9000932EE1 /* ViewSetting.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewSetting.xib; sourceTree = "<group>"; };
+		43CE8CC1141027820052F77E /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		43CE8D43141034890052F77E /* button_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_press.png; sourceTree = "<group>"; };
+		43CE8D44141034890052F77E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		43CE8D89141042DD0052F77E /* RegisterManViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "RegisterManViewController-iPad.xib"; sourceTree = "<group>"; };
+		43E97D181401A3030077208E /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		43E97D191401A3030077208E /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* RegisterMan-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RegisterMan-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43E97D181401A3030077208E /* HttpRequest.h */,
+				43E97D191401A3030077208E /* HttpRequest.m */,
+				1D3623240D0F684500981E51 /* RegisterManAppDelegate.h */,
+				1D3623250D0F684500981E51 /* RegisterManAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* RegisterManViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* RegisterManViewController.m */,
+				437A055C14140775004B59E0 /* ViewHome.h */,
+				437A055D14140775004B59E0 /* ViewHome.m */,
+				437A055E14140775004B59E0 /* ViewHome.xib */,
+				439352DE14141E9000932EE1 /* ViewSetting.h */,
+				439352DF14141E9000932EE1 /* ViewSetting.m */,
+				439352E014141E9000932EE1 /* ViewSetting.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* RegisterMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				4341F065141021B2005D24DD /* images */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* RegisterMan_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* RegisterManViewController.xib */,
+				43CE8D89141042DD0052F77E /* RegisterManViewController-iPad.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				43CE8CC1141027820052F77E /* MainWindow-iPad.xib */,
+				8D1107310486CEB800E47090 /* RegisterMan-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4341F065141021B2005D24DD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				43CE8D43141034890052F77E /* button_press.png */,
+				43CE8D44141034890052F77E /* button.png */,
+				437A0562141407EB004B59E0 /* home-iPad.png */,
+				4341F06A141021B2005D24DD /* icon-ipad.png */,
+				437A05AB1414120E004B59E0 /* bg_layer.png */,
+				439352CC14141A6700932EE1 /* title.png */,
+				437A05AC1414120E004B59E0 /* input_layer.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* RegisterMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RegisterMan" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RegisterMan;
+			productName = RegisterMan;
+			productReference = 1D6058910D05DD3D006BFB54 /* RegisterMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RegisterMan" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* RegisterMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* RegisterManViewController.xib in Resources */,
+				4341F06F141021B2005D24DD /* icon-ipad.png in Resources */,
+				43CE8CC2141027820052F77E /* MainWindow-iPad.xib in Resources */,
+				43CE8D45141034890052F77E /* button_press.png in Resources */,
+				43CE8D46141034890052F77E /* button.png in Resources */,
+				43CE8D8A141042DD0052F77E /* RegisterManViewController-iPad.xib in Resources */,
+				437A056014140775004B59E0 /* ViewHome.xib in Resources */,
+				437A0563141407EB004B59E0 /* home-iPad.png in Resources */,
+				437A05AD1414120E004B59E0 /* bg_layer.png in Resources */,
+				437A05AE1414120E004B59E0 /* input_layer.png in Resources */,
+				439352CD14141A6700932EE1 /* title.png in Resources */,
+				439352E214141E9000932EE1 /* ViewSetting.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* RegisterManAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* RegisterManViewController.m in Sources */,
+				43E97D1A1401A3030077208E /* HttpRequest.m in Sources */,
+				437A055F14140775004B59E0 /* ViewHome.m in Sources */,
+				439352E114141E9000932EE1 /* ViewSetting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RegisterMan_Prefix.pch;
+				INFOPLIST_FILE = "RegisterMan-Info.plist";
+				PRODUCT_NAME = RegisterMan;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RegisterMan_Prefix.pch;
+				INFOPLIST_FILE = "RegisterMan-Info.plist";
+				PRODUCT_NAME = RegisterMan;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RegisterMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RegisterMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

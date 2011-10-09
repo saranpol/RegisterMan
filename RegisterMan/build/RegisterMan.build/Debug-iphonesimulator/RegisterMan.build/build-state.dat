@@ -1,0 +1,612 @@
+TRegisterMan
+v7
+r0
+t339458886.073129
+cCheck dependencies
+cProcessInfoPlistFile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/Info.plist RegisterMan-Info.plist
+cCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow.xib
+cCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController.xib
+cCpResource build/Debug-iphonesimulator/RegisterMan.app/icon-ipad.png images/icon-ipad.png
+cCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow-iPad.xib
+cCpResource build/Debug-iphonesimulator/RegisterMan.app/button_press.png images/button_press.png
+cCpResource build/Debug-iphonesimulator/RegisterMan.app/button.png images/button.png
+cCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController-iPad.xib
+cCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.xib
+cCpResource build/Debug-iphonesimulator/RegisterMan.app/home-iPad.png images/home-iPad.png
+cCpResource build/Debug-iphonesimulator/RegisterMan.app/bg_layer.png images/bg_layer.png
+cCpResource build/Debug-iphonesimulator/RegisterMan.app/input_layer.png images/input_layer.png
+cCpResource build/Debug-iphonesimulator/RegisterMan.app/title.png images/title.png
+cCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.xib
+cProcessPCH /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch.gch RegisterMan_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/main.o /Users/saranpol/HLP/RegisterMan/RegisterMan/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManAppDelegate.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManViewController.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/HttpRequest.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewHome.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewSetting.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan normal i386
+cGenerateDSYMFile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app.dSYM /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan
+cTouch /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HomeView.xib
+c000000004E63CF930000000000001665
+t1315164051
+s5733
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.h
+c000000004E516CAA0000000000000339
+t1313959082
+s825
+i<Foundation/Foundation.h>
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m
+c000000004E516E2B0000000000001296
+t1313959467
+s4758
+i"HttpRequest.h"
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.h
+c000000004E63EACA0000000000000253
+t1315171018
+s595
+i<UIKit/UIKit.h>
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.m
+c000000004E63D42E0000000000000AA7
+t1315165230
+s2727
+i"RegisterManAppDelegate.h"
+i"RegisterManViewController.h"
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.h
+c000000004E63EB2E0000000000000696
+t1315171118
+s1686
+i<UIKit/UIKit.h>
+i"RegisterManAppDelegate.h"
+i"ViewHome.h"
+i"ViewSetting.h"
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.m
+c000000004E645F440000000000002F4F
+t1315200836
+s12111
+i"RegisterManViewController.h"
+i"HttpRequest.h"
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.h
+c000000004E63D0B800000000000000FC
+t1315164344
+s252
+i<UIKit/UIKit.h>
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.m
+c000000004E63D38D0000000000000798
+t1315165069
+s1944
+i"ViewHome.h"
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.xib
+c000000004E63D1220000000000004A61
+t1315164450
+s19041
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.h
+c000000004E63EF410000000000000203
+t1315172161
+s515
+i<UIKit/UIKit.h>
+i"RegisterManAppDelegate.h"
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.m
+c000000004E63EF2B00000000000009CC
+t1315172139
+s2508
+i"ViewSetting.h"
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.xib
+c000000004E63EF6F00000000000076E2
+t1315172207
+s30434
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow-iPad.xib
+c000000004E600B68000000000000656B
+t1314917224
+s25963
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow.xib
+c000000004E5FEE7E0000000000005F63
+t1314909822
+s24419
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController-iPad.xib
+c000000004E63E878000000000000CB72
+t1315170424
+s52082
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController.xib
+c000000004E600D8F000000000000A523
+t1314917775
+s42275
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterMan_Prefix.pch
+c000000004E5164CB00000000000000BF
+t1313957067
+s191
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app
+t1317765961
+s680
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app.dSYM
+t1317765961
+s102
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/Default-iPad.png
+t1315163714
+s1126692
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/HomeView.nib
+t2
+s0
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/Info.plist
+t1317765957
+s953
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/MainWindow-iPad.nib
+t1315163714
+s1167
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/MainWindow.nib
+t1315163713
+s1131
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/PkgInfo
+t1317765957
+s8
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan
+t1317765961
+s58732
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterManViewController-iPad.nib
+t1317765959
+s4511
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterManViewController.nib
+t1315163714
+s3813
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/ViewHome.nib
+t1315164582
+s1527
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/ViewSetting.nib
+t1317765959
+s2774
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/bg_layer.png
+t1317765957
+s724170
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/button.png
+t1315163714
+s4816
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/button_press.png
+t1315163714
+s5143
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/form_bg-iPad.png
+t1315163714
+s723553
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/home-iPad.png
+t1315164581
+s1131499
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/icon-ipad.png
+t1315163713
+s11095
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/input_layer.png
+t1317765957
+s28573
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/title.png
+t1317765957
+s8417
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/HttpRequest.o
+t1315163717
+s63156
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterMan.LinkFileList
+c000000004E8B83450000000000000363
+t1317765957
+s867
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManAppDelegate.o
+t1317765960
+s53824
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManViewController.o
+t1317765960
+s85812
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewHome.o
+t1317765960
+s38648
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewSetting.o
+t1317765960
+s44004
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/main.o
+t1315163717
+s6312
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/Default-iPad.png
+c000000004E5FFC6F0000000000113124
+t1314913391
+s1126692
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/bg_layer.png
+c000000004E63DA6E00000000000B0CCA
+t1315166830
+s724170
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/button.png
+c000000004E5FFCE600000000000012D0
+t1314913510
+s4816
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/button_press.png
+c000000004E5FFCE60000000000001417
+t1314913510
+s5143
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/form_bg-iPad.png
+c000000004E5FEA0200000000000B0A61
+t1314908674
+s723553
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/home-iPad.png
+c000000004E63D06000000000001143EB
+t1315164256
+s1131499
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/icon-ipad.png
+c000000004E5FEA020000000000002B57
+t1314908674
+s11095
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/input_layer.png
+c000000004E63E2D10000000000006F9D
+t1315168977
+s28573
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/images/title.png
+c000000004E63E2B400000000000020E1
+t1315168948
+s8417
+
+N/Users/saranpol/HLP/RegisterMan/RegisterMan/main.m
+c000000004E5164CB0000000000000169
+t1313957067
+s361
+i<UIKit/UIKit.h>
+
+N/var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch.gch
+t1315163716
+s15453392
+
+NRegisterMan-Info.plist
+c000000004E63E3C4000000000000055D
+t1315169220
+s1373
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies339458886#339458886#0(0"0(0#1#0"8604247744#0"0#
+
+CCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/HttpRequest.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s336856517.192823
+e336856517.302548
+r1
+xCompileC
+xbuild/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/HttpRequest.o
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m: In function '-[HttpRequest processResponse:]':
+o/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: no '-receivedResponse' method found
+o/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: (Messages without a matching method signature
+o/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: will be assumed to return 'id' and accept
+o/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: '...' as arguments.)
+lSLF07#2@73"Compile /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m336856517#336856517#0(575"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m: In function '-[HttpRequest processResponse:]':/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: no '-receivedResponse' method found/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: (Messages without a matching method signature/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: will be assumed to return 'id' and accept/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m:42: warning: '...' as arguments.)2(22@35"No '-receivedResponse' method found336856517#114#115#0(6@65"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m335652267#42#0#42#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)336856517#229#125#0(6@65"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m335652267#42#0#42#0#0"0(0#0#65"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m8604456640#2071"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-generated-files.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-own-target-headers.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-all-target-headers.hmap -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-project-headers.hmap -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/include -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources/i386 -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources -include /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch -c /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HttpRequest.m -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/HttpRequest.o0#
+
+CCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManAppDelegate.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339458759.552847
+e339458760.640285
+r1
+xCompileC
+xbuild/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManAppDelegate.o
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.m339458759#339458760#0(0"0(0#0#76"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.m8602679968#2093"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-generated-files.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-own-target-headers.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-all-target-headers.hmap -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-project-headers.hmap -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/include -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources/i386 -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources -include /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch -c /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManAppDelegate.m -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManAppDelegate.o0#
+
+CCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManViewController.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339458759.553880
+e339458760.755117
+r1
+xCompileC
+xbuild/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManViewController.o
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.m339458759#339458760#0(0"0(0#0#79"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.m8596751488#2099"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-generated-files.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-own-target-headers.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-all-target-headers.hmap -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-project-headers.hmap -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/include -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources/i386 -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources -include /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch -c /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/RegisterManViewController.m -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterManViewController.o0#
+
+CCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewHome.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339458760.640516
+e339458760.815879
+r1
+xCompileC
+xbuild/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewHome.o
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.m339458760#339458760#0(0"0(0#0#62"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.m8603830624#2065"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-generated-files.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-own-target-headers.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-all-target-headers.hmap -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-project-headers.hmap -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/include -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources/i386 -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources -include /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch -c /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.m -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewHome.o0#
+
+CCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewSetting.o /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339458760.755225
+e339458760.875793
+r1
+xCompileC
+xbuild/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewSetting.o
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.m339458760#339458760#0(0"0(0#0#65"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.m8603488416#2071"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-generated-files.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-own-target-headers.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-all-target-headers.hmap -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-project-headers.hmap -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/include -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources/i386 -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources -include /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch -c /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.m -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/ViewSetting.o0#
+
+CCompileC build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/main.o /Users/saranpol/HLP/RegisterMan/RegisterMan/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s336856516.905818
+e336856517.175191
+r1
+xCompileC
+xbuild/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/main.o
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/saranpol/HLP/RegisterMan/RegisterMan/main.m336856516#336856517#0(0"0(0#0#50"/Users/saranpol/HLP/RegisterMan/RegisterMan/main.m8599664672#2049"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-generated-files.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-own-target-headers.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-all-target-headers.hmap -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-project-headers.hmap -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/include -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources/i386 -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources -include /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch -c /Users/saranpol/HLP/RegisterMan/RegisterMan/main.m -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/HomeView.xib
+r0
+
+CCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.xib
+s336857381.775635
+e336857382.251666
+r1
+xCompileXIB
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.xib
+lSLF07#2@31"CompileXIB Classes/ViewHome.xib336857381#336857382#0(0"0(0#0#64"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.xib8616857248#593"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/ViewHome.nib /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewHome.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.xib
+s339458757.222829
+e339458759.552526
+r1
+xCompileXIB
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@34"CompileXIB Classes/ViewSetting.xib339458757#339458759#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#67"/Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.xib8603538720#599"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/ViewSetting.nib /Users/saranpol/HLP/RegisterMan/RegisterMan/Classes/ViewSetting.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow-iPad.xib
+s336856513.747292
+e336856514.548539
+r1
+xCompileXIB
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow-iPad.xib
+lSLF07#2@30"CompileXIB MainWindow-iPad.xib336856513#336856514#0(0"0(0#0#63"/Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow-iPad.xib8599223328#599"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/MainWindow-iPad.nib /Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow-iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow.xib
+s336856506.253170
+e336856513.700023
+r1
+xCompileXIB
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib336856506#336856513#0(0"0(0#0#58"/Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow.xib8608642080#589"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/MainWindow.nib /Users/saranpol/HLP/RegisterMan/RegisterMan/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController-iPad.xib
+s339458757.205754
+e339458759.552290
+r1
+xCompileXIB
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController-iPad.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@45"CompileXIB RegisterManViewController-iPad.xib339458757#339458759#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#78"/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController-iPad.xib8604660064#629"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterManViewController-iPad.nib /Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController-iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController.xib
+s336856506.255052
+e336856514.260663
+r1
+xCompileXIB
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@40"CompileXIB RegisterManViewController.xib336856506#336856514#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#73"/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController.xib8607811744#619"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterManViewController.nib /Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterManViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/Default-iPad.png images/Default-iPad.png
+s336856513.700183
+e336856514.257222
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/Default-iPad.png
+ximages/Default-iPad.png
+lSLF07#2@28"Copy images/Default-iPad.png336856513#336856514#0(0"0(0#0#67"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/Default-iPad.png8600819488#500"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/Default-iPad.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/bg_layer.png images/bg_layer.png
+s339458757.218912
+e339458757.399763
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/bg_layer.png
+ximages/bg_layer.png
+lSLF07#2@24"Copy images/bg_layer.png339458757#339458757#0(0"0(0#0#63"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/bg_layer.png8604226240#496"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/bg_layer.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/button.png images/button.png
+s336856514.261375
+e336856514.305660
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/button.png
+ximages/button.png
+lSLF07#2@22"Copy images/button.png336856514#336856514#0(0"0(0#0#61"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/button.png8608313056#494"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/button.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/button_press.png images/button_press.png
+s336856514.260740
+e336856514.305507
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/button_press.png
+ximages/button_press.png
+lSLF07#2@28"Copy images/button_press.png336856514#336856514#0(0"0(0#0#67"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/button_press.png8605237696#500"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/button_press.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/form_bg-iPad.png images/form_bg-iPad.png
+s336856513.745675
+e336856514.182527
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/form_bg-iPad.png
+ximages/form_bg-iPad.png
+lSLF07#2@28"Copy images/form_bg-iPad.png336856513#336856514#0(0"0(0#0#67"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/form_bg-iPad.png8608411552#500"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/form_bg-iPad.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/home-iPad.png images/home-iPad.png
+s336857381.776921
+e336857381.880162
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/home-iPad.png
+ximages/home-iPad.png
+lSLF07#2@25"Copy images/home-iPad.png336857381#336857381#0(0"0(0#0#64"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/home-iPad.png8616891616#497"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/home-iPad.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/icon-ipad.png images/icon-ipad.png
+s336856513.746583
+e336856513.940069
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/icon-ipad.png
+ximages/icon-ipad.png
+lSLF07#2@25"Copy images/icon-ipad.png336856513#336856513#0(0"0(0#0#64"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/icon-ipad.png8603921504#497"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/icon-ipad.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/input_layer.png images/input_layer.png
+s339458757.220181
+e339458757.280899
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/input_layer.png
+ximages/input_layer.png
+lSLF07#2@27"Copy images/input_layer.png339458757#339458757#0(0"0(0#0#66"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/input_layer.png8604079648#499"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/input_layer.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CCpResource build/Debug-iphonesimulator/RegisterMan.app/title.png images/title.png
+s339458757.221506
+e339458757.272663
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/RegisterMan.app/title.png
+ximages/title.png
+lSLF07#2@21"Copy images/title.png339458757#339458757#0(0"0(0#0#60"/Users/saranpol/HLP/RegisterMan/RegisterMan/images/title.png8603747488#493"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/saranpol/HLP/RegisterMan/RegisterMan/images/title.png /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
+CGenerateDSYMFile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app.dSYM /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan
+s339458761.350713
+e339458761.409956
+r1
+xGenerateDSYMFile
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app.dSYM
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/RegisterMan.app.dSYM build/Debug-iphonesimulator/RegisterMan.app/RegisterMan339458761#339458761#0(0"0(0#0#99"/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan8604405632#410"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app.dSYM0#
+
+CLd /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan normal i386
+s339458760.875880
+e339458761.350527
+r1
+xLd
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan
+xnormal
+xi386
+lSLF07#2@104"Link /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan339458760#339458761#0(0"0(0#0#0"8603256832#945"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -filelist /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/Objects-normal/i386/RegisterMan.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/RegisterMan0#
+
+CProcessInfoPlistFile /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/Info.plist RegisterMan-Info.plist
+s339458757.050161
+e339458757.205263
+r1
+xProcessInfoPlistFile
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/Info.plist
+xRegisterMan-Info.plist
+lSLF07#2@30"Process RegisterMan-Info.plist339458757#339458757#0(0"0(0#0#66"/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterMan-Info.plist28992425118793828#506"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RegisterMan-Info.plist -genpkginfo /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app/Info.plist0#
+
+CProcessPCH /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch.gch RegisterMan_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s336856514.896352
+e336856516.905617
+r1
+xProcessPCH
+x/var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch.gch
+xRegisterMan_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile RegisterMan_Prefix.pch336856514#336856516#0(0"0(0#0#66"/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterMan_Prefix.pch8601387648#1932"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-generated-files.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-own-target-headers.hmap -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-all-target-headers.hmap -iquote /Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/RegisterMan-project-headers.hmap -F/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/include -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources/i386 -I/Users/saranpol/HLP/RegisterMan/RegisterMan/build/RegisterMan.build/Debug-iphonesimulator/RegisterMan.build/DerivedSources -c /Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterMan_Prefix.pch -o /var/folders/rG/rGV-9NusHb0SjRMWwbVgjU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RegisterMan_Prefix-gjjcxduuasoajyasnbuulaxhkpms/RegisterMan_Prefix.pch.gch0#
+
+CTouch /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app
+s339458761.410031
+e339458761.465932
+r1
+xTouch
+x/Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app
+lSLF07#2@93"Touch /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app339458761#339458761#0(0"0(0#0#0"8604083808#292"    cd /Users/saranpol/HLP/RegisterMan/RegisterMan    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/saranpol/HLP/RegisterMan/RegisterMan/build/Debug-iphonesimulator/RegisterMan.app0#
+
