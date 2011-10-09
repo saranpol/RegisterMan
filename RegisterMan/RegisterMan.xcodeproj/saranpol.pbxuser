@@ -23,9 +23,9 @@
 	};
 	28D7ACF60DDB3853001CB0EB /* RegisterManViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1352, 1121}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1352, 1140}}";
 			sepNavSelRange = "{866, 0}";
-			sepNavVisRange = "{257, 1692}";
+			sepNavVisRange = "{0, 1535}";
 			sepNavWindowFrame = "{{15, 82}, {1548, 941}}";
 		};
 	};
@@ -96,13 +96,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 339458740;
-			PBXWorkspaceStateSaveDate = 339458740;
+			PBXPerProjectTemplateStateSaveDate = 339874030;
+			PBXWorkspaceStateSaveDate = 339874030;
 		};
 		perUserProjectItems = {
 			432C854B143BC316003D407B /* PBXTextBookmark */ = 432C854B143BC316003D407B /* PBXTextBookmark */;
 			432C854C143BC316003D407B /* PBXTextBookmark */ = 432C854C143BC316003D407B /* PBXTextBookmark */;
-			432C854D143BC316003D407B /* PBXTextBookmark */ = 432C854D143BC316003D407B /* PBXTextBookmark */;
 			432C854E143BC316003D407B /* PBXTextBookmark */ = 432C854E143BC316003D407B /* PBXTextBookmark */;
 			4341F08A141024FD005D24DD /* PBXTextBookmark */ = 4341F08A141024FD005D24DD /* PBXTextBookmark */;
 			437A059514140DD8004B59E0 /* PBXTextBookmark */ = 437A059514140DD8004B59E0 /* PBXTextBookmark */;
@@ -124,6 +123,7 @@
 			43CE8D21141032040052F77E /* PBXTextBookmark */ = 43CE8D21141032040052F77E /* PBXTextBookmark */;
 			43CE8DA01410469D0052F77E /* PBXTextBookmark */ = 43CE8DA01410469D0052F77E /* PBXTextBookmark */;
 			43CE8DA11410469D0052F77E /* PBXTextBookmark */ = 43CE8DA11410469D0052F77E /* PBXTextBookmark */;
+			43E8EE20144211F2009B978D /* PBXTextBookmark */ = 43E8EE20144211F2009B978D /* PBXTextBookmark */;
 			43E97D261401A6ED0077208E /* PBXTextBookmark */ = 43E97D261401A6ED0077208E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 43E97CC414019C510077208E /* Source Control */;
@@ -163,13 +163,6 @@
 		rType = 0;
 		vrLen = 1247;
 		vrLoc = 7314;
-	};
-	432C854D143BC316003D407B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28D7ACF60DDB3853001CB0EB /* RegisterManViewController.h */;
-		rLen = 1;
-		rLoc = 51;
-		rType = 1;
 	};
 	432C854E143BC316003D407B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -395,6 +388,16 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 361;
+		vrLoc = 0;
+	};
+	43E8EE20144211F2009B978D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* RegisterManViewController.h */;
+		name = "RegisterManViewController.h: 28";
+		rLen = 0;
+		rLoc = 866;
+		rType = 0;
+		vrLen = 1535;
 		vrLoc = 0;
 	};
 	43E97CB214019C4B0077208E /* RegisterMan */ = {
