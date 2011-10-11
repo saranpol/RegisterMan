@@ -38,7 +38,11 @@
 
 
 -(void)processResponse:(NSMutableData *)for_process_data {
-	printf("result = %s\n", (char *)[for_process_data bytes]);
+	if(for_process_data)
+		printf("result = %s\n", (char *)[for_process_data bytes]);
+	else
+		[mListener saveDataIniPad];
+
 	[mListener receivedResponse];
 	
 	
@@ -76,8 +80,12 @@
 	[self didStopNetworking];
 	
 	if (statusString == nil) {
+		// receive
 		[self processResponse:for_process_data];
 		[for_process_data release];
+	}else{
+		// fail
+		[self processResponse:nil];
 	}
 
 	// check image upload queue
@@ -186,8 +194,8 @@
 }
 
 - (void)connection:(NSURLConnection *)theConnection didFailWithError:(NSError *)error {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Molome" 
-													message:@"Please connect to internet"
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Register" 
+													message:@"Please connect to internet\nSaved data in iPad."
 												   delegate:nil 
 										  cancelButtonTitle:@"OK" 
 										  otherButtonTitles: nil];

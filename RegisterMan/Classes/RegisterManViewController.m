@@ -52,6 +52,9 @@
     [mImagePicker setDelegate:self];
 	mFirstShow = YES;
 	
+	mViewSetting = [[ViewSetting alloc] initWithNibName:@"ViewSetting" bundle:nil];
+	[self.view addSubview:mViewSetting.view];
+	[mViewSetting.view removeFromSuperview];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -362,8 +365,10 @@
 	[alert show];
 	[alert release];
 	*/
-	
+}
 
+- (void)saveDataIniPad {
+	[mViewSetting addRegisterData:nil name:@"ddd" email:@"xxx" tel:@"222"];
 }
 
 - (IBAction)clickHomeButton:(id)sender {
@@ -373,8 +378,6 @@
 }
 
 - (IBAction)clickSettingButton:(id)sender {
-	if(!mViewSetting)
-		mViewSetting = [[ViewSetting alloc] initWithNibName:@"ViewSetting" bundle:nil];
 	[self presentModalViewController:mViewSetting animated:YES];
 }
 

@@ -8,12 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import "RegisterManAppDelegate.h"
+#import "CellRegister.h"
 
-@interface ViewSetting : UIViewController {
+@interface ViewSetting : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@public
+	IBOutlet UITableView *mTableView;
+	IBOutlet CellRegister *tmpCell;
 	IBOutlet UITextField *mSubmitUrl;
+	
+	NSMutableArray *mCellRegisterList;
 }
 
+@property (nonatomic, retain) IBOutlet UITableView *mTableView;
+@property (nonatomic, assign) IBOutlet CellRegister *tmpCell;
+
 @property (nonatomic, retain) IBOutlet UITextField *mSubmitUrl;
+
+
+- (void)addRegisterData:(UIImage*)image name:(NSString*)name email:(NSString*)email tel:(NSString*)tel;
 
 - (IBAction)clickBackButton:(id)sender;
 - (IBAction)clickSaveButton:(id)sender;

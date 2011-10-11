@@ -55,5 +55,6 @@
 - (IBAction)clickSettingButton:(id)sender;
 - (IBAction)textFieldFinished:(id)sender;
 - (void)receivedResponse;
+- (void)saveDataIniPad;
 @end
 
