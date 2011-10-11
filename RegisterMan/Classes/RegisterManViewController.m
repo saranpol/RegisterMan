@@ -8,6 +8,7 @@
 
 #import "RegisterManViewController.h"
 #import "HttpRequest.h"
+#import "ViewSetting.h"
 
 @implementation RegisterManViewController
 
@@ -23,28 +24,229 @@
 @synthesize mResetButton;
 @synthesize mTakePhotoButton;
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+
+// File Manager
+@synthesize dataPath;
+@synthesize filePath;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ################
+// File Management
+// ################
+
+#pragma mark -
+#pragma mark File Management
+
+
+void AlertWithError(NSError *error)
+{
+    printf("Error! %s %s", [[error localizedDescription] UTF8String], [[error localizedFailureReason] UTF8String]);
+	
 }
-*/
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
+ - (void) saveFile:(NSString *)fileName data:(char *)buf size:(NSInteger)size{
+ 
+ //NSData *tmpData = [NSData dataWithBytesNoCopy:(void *)buf length:size];
+ NSData *tmpData = [NSData dataWithBytes:(void *)buf length:size];
+ 
+ [filePath release]; //release previous instance
+ filePath = [[dataPath stringByAppendingPathComponent:fileName] retain];
+ 
+ //if ([[NSFileManager defaultManager] fileExistsAtPath:filePath] == NO)
+ 
+ printf("write %s\n", [filePath UTF8String]);
+ [[NSFileManager defaultManager] createFileAtPath:filePath
+ contents:tmpData
+ attributes:nil];
+ }
+ */
+- (void)saveFile:(NSString *)fileName data:(NSData *)tmpData{
+	
+	[filePath release]; //release previous instance
+	filePath = [[dataPath stringByAppendingPathComponent:fileName] retain];
+	
+	printf("write %s\n", [filePath UTF8String]);
+	[[NSFileManager defaultManager] createFileAtPath:filePath
+											contents:tmpData
+										  attributes:nil];
 }
-*/
+
+
+- (void) deleteFile:(NSString *)fileName{
+	NSString *fName = [dataPath stringByAppendingPathComponent:fileName];
+	if ([[NSFileManager defaultManager] fileExistsAtPath:fName]) {
+		if (![[NSFileManager defaultManager] removeItemAtPath:fName error:&mError])
+			AlertWithError(mError);
+	}
+}
+
+- (void) deleteFileFormat:(NSString *)formatName{
+	//NSArray *dirContents = [[NSFileManager defaultManager] directoryContentsAtPath:dataPath];
+	NSArray *dirContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:dataPath error:&mError];
+	for (NSString *file in dirContents) {
+		if ([[file pathExtension] isEqualToString:formatName]) {
+			[self deleteFile:file];
+		}
+	}
+}
+
+- (int) countFileFormat:(NSString *)formatName{
+	//NSArray *dirContents = [[NSFileManager defaultManager] directoryContentsAtPath:dataPath];
+	NSArray *dirContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:dataPath error:&mError];
+	int count = 0;
+	for (NSString *file in dirContents) {
+		if ([[file pathExtension] isEqualToString:formatName]) {
+			count++;
+		}
+	}
+	return count;
+}
+
+- (void) setupDirectory
+{
+	/* create path to cache directory inside the application's Documents
+	 directory */
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	self.dataPath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"cache"];
+	printf("dataPath = %s\n", [self.dataPath UTF8String]);
+	
+	/* check for existence of cache directory */
+	if ([[NSFileManager defaultManager] fileExistsAtPath:dataPath]) {
+		return;
+	}
+	
+	/* create a new cache directory */
+	if (![[NSFileManager defaultManager] createDirectoryAtPath:dataPath
+								   withIntermediateDirectories:NO
+													attributes:nil
+														 error:&mError]) {
+		AlertWithError(mError);
+		return;
+	}
+}
+
+/* removes every file in the directory */
+
+- (void) clearDirectory
+{
+	/* remove the cache directory and its contents */
+	if (![[NSFileManager defaultManager] removeItemAtPath:dataPath error:&mError]) {
+		AlertWithError(mError);
+		return;
+	}
+	
+	/* create a new cache directory */
+	if (![[NSFileManager defaultManager] createDirectoryAtPath:dataPath
+								   withIntermediateDirectories:NO
+													attributes:nil
+														 error:&mError]) {
+		AlertWithError(mError);
+		return;
+	}
+	
+}
+
+//#define TIME_CACHE 86400.0 // one day
+#define TIME_CACHE 10.0
+
+- (BOOL)is_old_file:(NSString *)fName
+{
+	NSDictionary* properties = [[NSFileManager defaultManager]
+								attributesOfItemAtPath:fName
+								error:&mError];
+	if(!properties)
+		return YES;
+	
+	NSDate* modDate = [properties objectForKey:NSFileModificationDate];
+	
+	//printf("\n\n\nxxxxx %s\n", [[modDate description] UTF8String]);
+	//printf("file time %f \n", [modDate timeIntervalSinceNow]);
+	
+	if(fabs([modDate timeIntervalSinceNow]) > TIME_CACHE)
+		return YES;
+	else
+		return NO;
+}
+
+//#define KFileCardNearMeList @"list.nml"
+- (void)ClearCache
+{
+	NSArray *dirContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:dataPath error:&mError];
+	for (NSString *file in dirContents) {
+		//if([self is_old_file:file]){
+		[self deleteFile:file];
+		printf("will delete file cache = %s\n", [file UTF8String]);
+		//}
+	}
+}
+
+
+- (BOOL)isFileExist:(NSString *)fName
+{
+	fName = [dataPath stringByAppendingPathComponent:fName];
+	return [[NSFileManager defaultManager] fileExistsAtPath:fName];
+}
+
+
+
+- (NSData*)contentOfFile:(NSString *)fName
+{
+	fName = [dataPath stringByAppendingPathComponent:fName];
+	return [NSData dataWithContentsOfFile:fName];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+	// File manager
+	[self setupDirectory];
+	
+	
+
+
+	
+	
+	
 	mImagePicker = [[UIImagePickerController alloc] init];
 	
 	//[mImagePicker setAllowsEditing:YES];
@@ -53,8 +255,21 @@
 	mFirstShow = YES;
 	
 	mViewSetting = [[ViewSetting alloc] initWithNibName:@"ViewSetting" bundle:nil];
+	mViewSetting->mRegisterManViewController = self;
 	[self.view addSubview:mViewSetting.view];
 	[mViewSetting.view removeFromSuperview];
+	
+	
+	// load from nsuser
+	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+	NSArray *load_array = [prefs arrayForKey:@"mRegisterDataArray"];
+	if(!load_array)
+		mRegisterDataArray = [[NSMutableArray alloc] init];
+	else {
+		mRegisterDataArray = [[NSMutableArray alloc] initWithArray:load_array];
+		[mViewSetting setupRegisterData:mRegisterDataArray];
+		[mViewSetting->mTableView reloadData];
+	}
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -106,6 +321,8 @@
 	[mPhoneTextField release];
 	[mEmailTextField release];
 	[mActivityLoading release];
+	
+	[mRegisterDataArray release];
 	
     [super dealloc];
 }
@@ -266,10 +483,10 @@
 	[self clickBackButton:sender];
 }
 
-- (IBAction)clickSubmitButton:(id)sender {
-	mActivityLoading.hidden = NO;
-	//NSMutableURLRequest *request = [self create_request:@"http://api.hlpth.com/test_upload/"];
 
+- (void)sendRegisterData:(id)listener name:(NSString*)name tel:(NSString*)tel email:(NSString*)email image:(UIImage*)image {
+	//NSMutableURLRequest *request = [self create_request:@"http://api.hlpth.com/test_upload/"];
+	
 	NSString *submit_url;
 	
 	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
@@ -281,7 +498,7 @@
 	
 	
 	HttpRequest *http_request = [[[HttpRequest alloc] init] autorelease];
-	http_request->mListener = self;
+	http_request->mListener = listener;
 	
 	//[http_request cancel_connect];
 	assert(http_request.connection == nil);
@@ -289,12 +506,12 @@
 	NSMutableData *post_data = [NSMutableData data];
 	
 	NSMutableDictionary *post_data_arr = [NSMutableDictionary dictionaryWithCapacity:0];
-	[post_data_arr setObject:mUsernameTextField.text forKey:@"Register[name]"];
-	[post_data_arr setObject:mPhoneTextField.text forKey:@"Register[phone]"];
-	[post_data_arr setObject:mEmailTextField.text forKey:@"Register[email]"];
+	[post_data_arr setObject:name forKey:@"Register[name]"];
+	[post_data_arr setObject:tel forKey:@"Register[phone]"];
+	[post_data_arr setObject:email forKey:@"Register[email]"];
 	[post_data_arr setObject:@"0" forKey:@"Register[hidden]"];	
 	NSString *post_data_multipart = [self arrayToMultipart:post_data_arr boundary:BOUNDARY];
-	NSData *image_data = UIImageJPEGRepresentation(mUserImage.image, 1.0);
+	NSData *image_data = UIImageJPEGRepresentation(image, 1.0);
 	post_data_multipart = [post_data_multipart stringByAppendingFormat:@"--%@\r\n", BOUNDARY];
 	post_data_multipart = [post_data_multipart stringByAppendingString:@"Content-Disposition: form-data; name=\"Register[image]\"; filename=\"save.jpg\"\r\n"];
 	post_data_multipart = [post_data_multipart stringByAppendingString:@"Content-Type: image/jpeg\r\n\r\n"];
@@ -321,9 +538,9 @@
 	//}
 	// Multipart post
 	//else if(post_data){
-		[request setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=\"%@\"", BOUNDARY] forHTTPHeaderField:@"Content-Type"];
-		NSString *postLength = [NSString stringWithFormat:@"%d", [post_data length]]; 
-		[request setValue:postLength forHTTPHeaderField:@"Content-Length"];  
+	[request setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=\"%@\"", BOUNDARY] forHTTPHeaderField:@"Content-Type"];
+	NSString *postLength = [NSString stringWithFormat:@"%d", [post_data length]]; 
+	[request setValue:postLength forHTTPHeaderField:@"Content-Length"];  
 	//}
 	
 	[request setHTTPBody:post_data];
@@ -334,6 +551,11 @@
 	
 	// Tell the UI we're receiving.
     [http_request _receiveDidStart];
+}
+
+- (IBAction)clickSubmitButton:(id)sender {
+	mActivityLoading.hidden = NO;
+	[self sendRegisterData:self name:mUsernameTextField.text tel:mPhoneTextField.text email:mEmailTextField.text image:mUserImage.image];
 }
 
 
@@ -368,7 +590,31 @@
 }
 
 - (void)saveDataIniPad {
-	[mViewSetting addRegisterData:nil name:@"ddd" email:@"xxx" tel:@"222"];
+	NSData *image_data = UIImageJPEGRepresentation(mUserImage.image, 1.0);
+	
+	NSDate *date = [NSDate date];
+	NSString *filename = [NSString stringWithFormat:@"img_%f.jpg", [date timeIntervalSince1970]];
+	[self saveFile:filename data:image_data];
+	
+	
+	UIImage *resize_image = [ImageUtil resizeImage:mUserImage.image scaledToSize:CGSizeMake(44.0, 44.0) 
+							  scaleFactor:1.0
+									   ox:0
+									   oy:0];
+
+	NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:4];
+	[dict setObject:mUsernameTextField.text forKey:@"name"];
+	[dict setObject:mEmailTextField.text forKey:@"email"];
+	[dict setObject:mPhoneTextField.text forKey:@"tel"];
+	[dict setObject:filename forKey:@"filename"];
+	 
+	[mRegisterDataArray addObject:dict];
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:mRegisterDataArray forKey:@"mRegisterDataArray"];
+    [defaults synchronize];
+	
+	[mViewSetting addRegisterData:resize_image name:mUsernameTextField.text email:mEmailTextField.text tel:mPhoneTextField.text filename:filename];
 }
 
 - (IBAction)clickHomeButton:(id)sender {

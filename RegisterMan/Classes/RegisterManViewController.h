@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "RegisterManAppDelegate.h"
 #import "ViewHome.h"
-#import "ViewSetting.h"
+#import "ImageUtil.h"
+
+@class ViewSetting;
 
 @interface RegisterManViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 @public
@@ -31,6 +33,14 @@
 	ViewHome *mViewHome;
 	ViewSetting *mViewSetting;
 	BOOL mFirstShow;
+	
+	// File Manager
+	NSError *mError;
+	NSString *dataPath;
+	NSString *filePath;
+	
+	
+	NSMutableArray *mRegisterDataArray;
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView *mUserImage;
@@ -45,6 +55,14 @@
 @property (nonatomic, retain) IBOutlet UIView *mInputView;
 @property (nonatomic, retain) IBOutlet UIView *mThankYouView;
 
+
+// File Manager
+@property (nonatomic, copy) NSString *dataPath;
+@property (nonatomic, copy) NSString *filePath;
+
+- (NSData*)contentOfFile:(NSString *)fName;
+
+- (void)sendRegisterData:(id)listener name:(NSString*)name tel:(NSString*)tel email:(NSString*)email image:(UIImage*)image;
 
 - (IBAction)clickCameraButton:(id)sender;
 - (IBAction)clickLibraryButton:(id)sender;

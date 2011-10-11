@@ -7,7 +7,7 @@
 //
 
 #import "ViewSetting.h"
-
+#import "ImageUtil.h"
 
 @implementation ViewSetting
 
@@ -100,18 +100,45 @@
 
 
 
+- (void)setupRegisterData:(NSMutableArray*)data {
+	for(NSDictionary *a in data){
+		
+		
+		
+		NSString *name = [a objectForKey:@"name"];
+		NSString *email = [a objectForKey:@"email"];
+		NSString *tel = [a objectForKey:@"tel"];
+		NSString *filename = [a objectForKey:@"filename"];
+
+		//printf("name %s filename %s\n", [name UTF8String], [filename UTF8String]);
+		
+		NSData *image_data = [mRegisterManViewController contentOfFile:filename];
+		UIImage *image = [UIImage imageWithData:image_data];
+		
+		UIImage *resize_image = [ImageUtil resizeImage:image scaledToSize:CGSizeMake(44.0, 44.0) 
+										   scaleFactor:1.0
+													ox:0
+													oy:0];
+		
+		[self addRegisterData:resize_image name:name email:email tel:tel filename:filename];
+	}
+}
 
 
-
-- (void)addRegisterData:(UIImage*)image name:(NSString*)name email:(NSString*)email tel:(NSString*)tel{
+- (void)addRegisterData:(UIImage*)image name:(NSString*)name email:(NSString*)email tel:(NSString*)tel filename:(NSString*)filename{
 	[[NSBundle mainBundle] loadNibNamed:@"CellRegister" owner:self options:nil];
 	CellRegister *cell = tmpCell;
 	self.tmpCell = nil;
 	
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	
 	// save image as file and keep the path
 	
-	//cell->...
-	
+	[cell->mImageView setImage:image];
+	[cell->mUsername setText:name];
+	[cell->mEmail setText:email];
+	[cell->mTel setText:tel];
+	cell->mFilename = [[NSString alloc] initWithString:filename];
 	
 	[mCellRegisterList addObject:cell];
 	[mTableView reloadData];

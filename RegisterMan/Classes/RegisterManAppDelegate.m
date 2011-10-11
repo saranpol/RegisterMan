@@ -14,6 +14,9 @@
 @synthesize window;
 @synthesize viewController;
 
++ (RegisterManAppDelegate *)core {
+    return (RegisterManAppDelegate *) [UIApplication sharedApplication].delegate;
+}
 
 #pragma mark -
 #pragma mark Application lifecycle

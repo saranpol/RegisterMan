@@ -12,9 +12,11 @@
 @class RegisterManViewController;
 
 @interface RegisterManAppDelegate : NSObject <UIApplicationDelegate> {
+@public
     UIWindow *window;
     RegisterManViewController *viewController;
 }
++ (RegisterManAppDelegate *)core;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet RegisterManViewController *viewController;

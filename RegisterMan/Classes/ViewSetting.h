@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RegisterManAppDelegate.h"
 #import "CellRegister.h"
+#import "RegisterManViewController.h"
 
 @interface ViewSetting : UIViewController <UITableViewDelegate, UITableViewDataSource> {
 @public
@@ -17,6 +18,7 @@
 	IBOutlet UITextField *mSubmitUrl;
 	
 	NSMutableArray *mCellRegisterList;
+	RegisterManViewController *mRegisterManViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *mTableView;
@@ -24,8 +26,8 @@
 
 @property (nonatomic, retain) IBOutlet UITextField *mSubmitUrl;
 
-
-- (void)addRegisterData:(UIImage*)image name:(NSString*)name email:(NSString*)email tel:(NSString*)tel;
+- (void)setupRegisterData:(NSMutableArray*)data;
+- (void)addRegisterData:(UIImage*)image name:(NSString*)name email:(NSString*)email tel:(NSString*)tel filename:(NSString*)filename;
 
 - (IBAction)clickBackButton:(id)sender;
 - (IBAction)clickSaveButton:(id)sender;
