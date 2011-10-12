@@ -67,6 +67,7 @@
 	if(mSuccess){
 		[[RegisterManAppDelegate core]->viewController->mViewSetting->mCellRegisterList removeObject:self];
 		[[RegisterManAppDelegate core]->viewController->mViewSetting->mTableView reloadData];
+		[[RegisterManAppDelegate core]->viewController->mViewSetting updateRegisterDataArray];
 	}
 	
 }

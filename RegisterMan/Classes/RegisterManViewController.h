@@ -64,6 +64,9 @@
 
 - (void)sendRegisterData:(id)listener name:(NSString*)name tel:(NSString*)tel email:(NSString*)email image:(UIImage*)image;
 
+- (void)addDataToRegisterDataArray:(NSString*)name email:(NSString*)email tel:(NSString*)tel filename:(NSString*)filename;
+- (void)savemRegisterDataArray;
+
 - (IBAction)clickCameraButton:(id)sender;
 - (IBAction)clickLibraryButton:(id)sender;
 - (IBAction)clickBackButton:(id)sender;

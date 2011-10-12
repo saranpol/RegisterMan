@@ -589,6 +589,22 @@ void AlertWithError(NSError *error)
 	*/
 }
 
+- (void)addDataToRegisterDataArray:(NSString*)name email:(NSString*)email tel:(NSString*)tel filename:(NSString*)filename {
+	NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:4];
+	[dict setObject:name forKey:@"name"];
+	[dict setObject:email forKey:@"email"];
+	[dict setObject:tel forKey:@"tel"];
+	[dict setObject:filename forKey:@"filename"];
+	
+	[mRegisterDataArray addObject:dict];
+}
+
+- (void)savemRegisterDataArray {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:mRegisterDataArray forKey:@"mRegisterDataArray"];
+    [defaults synchronize];	
+}
+
 - (void)saveDataIniPad {
 	NSData *image_data = UIImageJPEGRepresentation(mUserImage.image, 1.0);
 	
@@ -602,17 +618,8 @@ void AlertWithError(NSError *error)
 									   ox:0
 									   oy:0];
 
-	NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:4];
-	[dict setObject:mUsernameTextField.text forKey:@"name"];
-	[dict setObject:mEmailTextField.text forKey:@"email"];
-	[dict setObject:mPhoneTextField.text forKey:@"tel"];
-	[dict setObject:filename forKey:@"filename"];
-	 
-	[mRegisterDataArray addObject:dict];
-	
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:mRegisterDataArray forKey:@"mRegisterDataArray"];
-    [defaults synchronize];
+	[self addDataToRegisterDataArray:mUsernameTextField.text email:mEmailTextField.text tel:mPhoneTextField.text filename:filename];
+	[self savemRegisterDataArray];
 	
 	[mViewSetting addRegisterData:resize_image name:mUsernameTextField.text email:mEmailTextField.text tel:mPhoneTextField.text filename:filename];
 }

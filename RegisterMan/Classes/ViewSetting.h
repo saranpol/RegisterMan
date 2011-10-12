@@ -29,6 +29,8 @@
 - (void)setupRegisterData:(NSMutableArray*)data;
 - (void)addRegisterData:(UIImage*)image name:(NSString*)name email:(NSString*)email tel:(NSString*)tel filename:(NSString*)filename;
 
+- (void)updateRegisterDataArray;
+
 - (IBAction)clickBackButton:(id)sender;
 - (IBAction)clickSaveButton:(id)sender;
 - (IBAction)clickDefaultButton:(id)sender;

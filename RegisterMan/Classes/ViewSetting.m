@@ -185,6 +185,15 @@
 	
 }
 
+// update and save after upload offline data
+- (void)updateRegisterDataArray {
+	[mRegisterManViewController->mRegisterDataArray removeAllObjects];
+	
+	for(CellRegister *c in mCellRegisterList){
+		[mRegisterManViewController addDataToRegisterDataArray:c->mUsername.text email:c->mEmail.text tel:c->mTel.text filename:c->mFilename];
+	}
+	[mRegisterManViewController savemRegisterDataArray];
+}
 
 
 
