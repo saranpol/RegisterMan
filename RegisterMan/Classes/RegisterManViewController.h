@@ -75,6 +75,7 @@
 - (IBAction)clickHomeButton:(id)sender;
 - (IBAction)clickSettingButton:(id)sender;
 - (IBAction)textFieldFinished:(id)sender;
+- (IBAction)textFieldClick:(id)sender;
 - (void)receivedResponse;
 - (void)saveDataIniPad;
 @end

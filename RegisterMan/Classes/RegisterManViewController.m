@@ -561,6 +561,19 @@ void AlertWithError(NSError *error)
 
 - (IBAction)textFieldFinished:(id)sender {
 	[sender resignFirstResponder];
+	CGRect frame = self.view.frame;
+	if(frame.origin.x != 0){
+		frame.origin.x = 0;
+		self.view.frame = frame;
+	}
+}
+
+- (IBAction)textFieldClick:(id)sender {
+	CGRect frame = self.view.frame;
+	if(frame.origin.x == 0){
+		frame.origin.x = -70;
+		self.view.frame = frame;
+	}
 }
 
 - (void)receivedResponse {
@@ -573,8 +586,6 @@ void AlertWithError(NSError *error)
 	mResetButton.hidden = YES;
 	mSendButton.enabled = NO;
 
-	mThankYouView.hidden = NO;
-	mHomeButton.hidden = NO;
 
 	
 	
