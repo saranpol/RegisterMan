@@ -285,6 +285,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RegisterMan_Prefix.pch;
 				INFOPLIST_FILE = "RegisterMan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = RegisterMan;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RegisterMan_Prefix.pch;
 				INFOPLIST_FILE = "RegisterMan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = RegisterMan;
 				VALIDATE_PRODUCT = YES;
 			};
