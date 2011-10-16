@@ -28,6 +28,7 @@
 	IBOutlet UIView *mThankYouView;
 	UIImagePickerController *mImagePicker;
 	UIPopoverController *mPopoverController;
+	UIView *mView;
 	
 	
 	ViewHome *mViewHome;
@@ -54,7 +55,7 @@
 @property (nonatomic, retain) IBOutlet UIView *mActivityLoading;
 @property (nonatomic, retain) IBOutlet UIView *mInputView;
 @property (nonatomic, retain) IBOutlet UIView *mThankYouView;
-
+@property (nonatomic, retain) IBOutlet UIView *mView;
 
 // File Manager
 @property (nonatomic, copy) NSString *dataPath;

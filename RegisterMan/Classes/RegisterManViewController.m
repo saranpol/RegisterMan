@@ -23,6 +23,7 @@
 @synthesize mSendButton;
 @synthesize mResetButton;
 @synthesize mTakePhotoButton;
+@synthesize mView;
 
 
 // File Manager
@@ -324,6 +325,8 @@ void AlertWithError(NSError *error)
 	
 	[mRegisterDataArray release];
 	
+	[mView release];
+	
     [super dealloc];
 }
 
@@ -561,18 +564,18 @@ void AlertWithError(NSError *error)
 
 - (IBAction)textFieldFinished:(id)sender {
 	[sender resignFirstResponder];
-	CGRect frame = self.view.frame;
-	if(frame.origin.x != 0){
-		frame.origin.x = 0;
-		self.view.frame = frame;
+	CGRect frame = mView.frame;
+	if(frame.origin.y != 0){
+		frame.origin.y = 0;
+		mView.frame = frame;
 	}
 }
 
 - (IBAction)textFieldClick:(id)sender {
-	CGRect frame = self.view.frame;
-	if(frame.origin.x == 0){
-		frame.origin.x = -70;
-		self.view.frame = frame;
+	CGRect frame = mView.frame;
+	if(frame.origin.y == 0){
+		frame.origin.y = -70;
+		mView.frame = frame;
 	}
 }
 
