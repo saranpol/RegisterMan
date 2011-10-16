@@ -28,5 +28,5 @@
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *mLoading;
 
 - (IBAction)clickSendButton:(id)sender;
-
+- (void)receivedJson:(NSDictionary*)data;
 @end

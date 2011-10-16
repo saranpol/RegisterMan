@@ -16,6 +16,12 @@
 	currentDataLoad = 0;
 	receivedData = [[NSMutableData alloc] initWithLength:0];
 	
+	// init json
+	adapter = [SBJsonStreamParserAdapter new];
+	adapter.delegate = self;
+	parser = [SBJsonStreamParser new];
+	parser.delegate = adapter;
+	parser.multi = YES;
 	
 	done = NO;
 	
@@ -26,6 +32,9 @@
 - (void)dealloc {
 	[receivedData release];
 	
+	// clear json
+	[parser release];
+	[adapter release];
 	
 	
     [super dealloc];
@@ -37,16 +46,43 @@
 
 
 
--(void)processResponse:(NSMutableData *)for_process_data {
-	if(for_process_data)
-		printf("result = %s\n", (char *)[for_process_data bytes]);
-	else
-		[mListener saveDataIniPad];
 
-	[mListener receivedResponse];
+
+
+// #################
+//     Json parser 
+// #################
+
+- (void)parser:(SBJsonStreamParser *)parser foundArray:(NSArray *)array {
+	NSLog(@"Array: '%@'", array);	
+}
+
+- (void)parser:(SBJsonStreamParser *)parser foundObject:(NSDictionary *)dict {
+	//NSLog(@"Dict: '%@'", dict);
 	
+	//[[MolomeAppDelegate service] receivedJson:dict mode:mApiMode listener:mListener];
+    //xxxxxx here ecard 
+    [mListener receivedJson:dict];
+    
+}
+
+-(void)processResponse:(NSMutableData *)for_process_data {
+	printf("result = %s\n", (char *)[for_process_data bytes]);
+	
+	SBJsonStreamParserStatus status = [parser parse:for_process_data];
+	
+	if (status == SBJsonStreamParserError) {
+		NSLog(@"Parser error: %@", parser.error);
+		[mListener receivedJson:nil];
+	} else if (status == SBJsonStreamParserWaitingForData) {
+		NSLog(@"Parser waiting for more data");
+	}
 	
 }
+
+
+
+
 
 
 
@@ -62,6 +98,12 @@
 @synthesize connection    = _connection;
 
 
+/*
+ - (void)initBuffer {
+ buffer = (char *)[receivedData bytes];
+ length = [receivedData length];
+ }
+ */
 
 - (void)_receiveDidStopWithStatus:(NSString *)statusString {
 	NSMutableData *for_process_data;
@@ -74,20 +116,17 @@
 		//[receivedData release];
     }else {
 		printf("statusString = %s\n", [statusString UTF8String]);
+        [mListener receivedJson:nil];
 	}
 	//[self.activityIndicator stopAnimating];
 	[self finishProgress];
 	[self didStopNetworking];
 	
 	if (statusString == nil) {
-		// receive
 		[self processResponse:for_process_data];
 		[for_process_data release];
-	}else{
-		// fail
-		[self processResponse:nil];
 	}
-
+    
 	// check image upload queue
 	//[self processShareImageArray];
 	done = YES;
@@ -195,7 +234,7 @@
 
 - (void)connection:(NSURLConnection *)theConnection didFailWithError:(NSError *)error {
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Register" 
-													message:@"Please connect to internet\nSaved data in iPad."
+													message:@"Please connect to internet\nSaved data in iPad"
 												   delegate:nil 
 										  cancelButtonTitle:@"OK" 
 										  otherButtonTitles: nil];

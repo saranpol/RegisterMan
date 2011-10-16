@@ -78,5 +78,7 @@
 - (IBAction)textFieldClick:(id)sender;
 - (void)receivedResponse;
 - (void)saveDataIniPad;
+- (void)receivedJson:(NSDictionary*)data;
+
 @end
 

@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSON.h"
 
 
-@interface HttpRequest : NSObject {
-
+@interface HttpRequest : NSObject <SBJsonStreamParserAdapterDelegate> {
+    
 @public	
 	// Internet
 	NSMutableData *receivedData;
@@ -20,8 +21,11 @@
 	NSURLConnection *_connection;
 	NSInteger currentDataLoad;
 	NSInteger totalDataLoad;
-	//int mApiMode;
+	int mApiMode;
 	
+	// json
+	SBJsonStreamParser *parser;
+	SBJsonStreamParserAdapter *adapter;
 	
 	BOOL done;
 	id mListener;

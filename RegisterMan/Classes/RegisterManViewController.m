@@ -635,6 +635,18 @@ void AlertWithError(NSError *error)
 	[mViewSetting addRegisterData:resize_image name:mUsernameTextField.text email:mEmailTextField.text tel:mPhoneTextField.text filename:filename];
 }
 
+- (void)receivedJson:(NSDictionary*)data {
+    // if data == nil error show
+    if(data == nil){
+        [self saveDataIniPad];
+    }else{
+        BOOL success = [[data objectForKey:@"success"] boolValue];
+        if(!success)
+            [self saveDataIniPad];
+    }
+    [self receivedResponse];    
+}
+
 - (IBAction)clickHomeButton:(id)sender {
 	[self presentModalViewController:mViewHome animated:YES];	
 	[self clickResetButton:nil];

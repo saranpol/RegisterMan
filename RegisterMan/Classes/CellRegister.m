@@ -71,4 +71,17 @@
 	}
 	
 }
+
+- (void)receivedJson:(NSDictionary*)data {
+    // if data == nil error show
+    if(data == nil){
+        [self saveDataIniPad];
+    }else{
+        BOOL success = [[data objectForKey:@"success"] boolValue];
+        if(!success)
+            [self saveDataIniPad];
+    }
+    [self receivedResponse];    
+}
+
 @end
