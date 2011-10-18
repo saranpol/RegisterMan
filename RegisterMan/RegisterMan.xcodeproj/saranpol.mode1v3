@@ -312,8 +312,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -331,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>438F461C144B7BBF009F4EEF</string>
+										<string>43DB552B144CD25D0015F5EE</string>
 										<key>history</key>
 										<array>
 											<string>43CE8D0F14102C050052F77E</string>
@@ -362,7 +360,7 @@
 											<string>43110A3A144649C2003B31A0</string>
 											<string>43056ECA144B6D120068CA3F</string>
 											<string>438F45E0144B6E99009F4EEF</string>
-											<string>438F45E1144B6E99009F4EEF</string>
+											<string>438F461C144B7BBF009F4EEF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -420,9 +418,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>438F45D5144B6D19009F4EEF</string>
+				<string>43DB552C144CD25D0015F5EE</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>438F45D6144B6D19009F4EEF</string>
+				<string>43DB552D144CD25D0015F5EE</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -560,10 +558,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>438F45EB144B6E99009F4EEF</string>
-		<string>438F45EC144B6E99009F4EEF</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>43E97CC214019C510077208E</string>
 		<string>/Users/saranpol/HLP/RegisterMan/RegisterMan/RegisterMan.xcodeproj</string>
 	</array>
@@ -645,7 +639,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>43E97CC214019C510077208E</string>
-				<string>438F45D7144B6D19009F4EEF</string>
+				<string>43DB552E144CD25D0015F5EE</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
