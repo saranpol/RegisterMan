@@ -408,10 +408,20 @@ void AlertWithError(NSError *error)
 	mTakePhotoButton.hidden = YES;
 	mResetButton.hidden = NO;
 	mSendButton.enabled = YES;
+    
+    [mImagePicker release];
+    mImagePicker = nil;
+
 }
 
 
 - (IBAction)clickCameraButton:(id)sender {
+    if(mImagePicker)
+        [mImagePicker release];
+    mImagePicker = [[UIImagePickerController alloc] init];
+	[mImagePicker setAllowsEditing:NO];
+    [mImagePicker setDelegate:self];
+
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 		[mImagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
 		mImagePicker.cameraDevice = UIImagePickerControllerCameraDeviceFront;

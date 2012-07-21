@@ -44,6 +44,7 @@
 		52D0C0F4144AD387007967D4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C0E9144AD386007967D4 /* SBJsonStreamWriterState.m */; };
 		52D0C0F5144AD387007967D4 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C0EB144AD386007967D4 /* SBJsonTokeniser.m */; };
 		52D0C0F6144AD387007967D4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C0ED144AD386007967D4 /* SBJsonWriter.m */; };
+		52E88FBD15BB22DE00ECB6DD /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E88FBC15BB22DE00ECB6DD /* home2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,7 @@
 		52D0C0EB144AD386007967D4 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
 		52D0C0EC144AD386007967D4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		52D0C0ED144AD386007967D4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		52E88FBC15BB22DE00ECB6DD /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* RegisterMan-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RegisterMan-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +202,7 @@
 		43FC86751446435D00B3489D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				52E88FBC15BB22DE00ECB6DD /* home2.png */,
 				43FC86761446435D00B3489D /* button.png */,
 				43FC86771446435D00B3489D /* button2.png */,
 				43FC86781446435D00B3489D /* button2_press.png */,
@@ -306,6 +309,7 @@
 				43FC86891446435D00B3489D /* libstick.png in Resources */,
 				43FC868A1446435D00B3489D /* subtitle.png in Resources */,
 				43FC868B1446435D00B3489D /* title.png in Resources */,
+				52E88FBD15BB22DE00ECB6DD /* home2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
